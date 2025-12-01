@@ -3,7 +3,6 @@ import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 
 # 2.1 simple quadratic functions
-
 def f1(x):
     # simple quadratic function
     return x * x
@@ -61,7 +60,6 @@ def plot_1d_result(f, x_star, xmin, xmax, title):
 
 
 # 2.2 non-convex function with many minima
-
 def f3(x):
     return np.sin(x) + np.cos(np.sqrt(2) * x)
 
@@ -84,7 +82,6 @@ def plot_f3():
 
 
 # 3. numerical derivatives
-
 def approx_derivative_1d(f, x):
     # small step size for finite difference
     h = 0.00001
@@ -111,7 +108,6 @@ def gradient_descent_numeric(f, x0, alpha, eps, max_iter):
 
 
 # 4. gradient descent in 2D
-
 def approx_derivative_2d(f, x, y):
     h = 0.00001
     dfx = (f(x + h, y) - f(x, y)) / h
@@ -160,7 +156,6 @@ def plot_3d_result(x_star, y_star):
 
 
 # main testing part
-
 def main():
     # 2.1 basic test
     print("2.1 basic gradient descent test")
@@ -206,3 +201,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
